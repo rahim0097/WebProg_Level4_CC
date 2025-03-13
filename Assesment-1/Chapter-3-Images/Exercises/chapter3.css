@@ -1,0 +1,64 @@
+body {
+  font-family: 'Comic Sans MS', cursive;
+  color: white;
+  text-align: center;
+  background-color: #50C878;
+  margin: 20px;
+}
+
+h1 {
+  color: #355E3B;
+}
+
+.image-container {
+  display: inline-block;
+  margin: 20px;
+}
+
+img {
+  border: 5px solid #34495e;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  filter: brightness(90%) contrast(110%);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+p {
+  font-size: 28px;
+  color: white;
+  margin-top: 10px;
+}     
+       .box {
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+            line-height: 150px;
+            font-family: Arial, sans-serif;
+        }
+
+        #A {
+            border: 3px solid purple;
+            box-shadow: 10px 10px 15px red;
+        }
+
+        #B {
+            border: 3px solid lime;
+            box-shadow: -10px -10px 20px black inset;
+        }
+
+        #C {
+            border: 10px solid green;
+            box-shadow: 0 0 0 10px blue, 0 0 0 20px orange, 0 0 0 30px red;
+            border-radius: 25px;
+        }
+
+        #D {
+            border: 2px solid brown;
+            text-decoration: line-through;
+        }
