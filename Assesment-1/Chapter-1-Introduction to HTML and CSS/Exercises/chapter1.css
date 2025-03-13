@@ -1,0 +1,32 @@
+ body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg,#f4a261, #e76f51);
+            color: #1F7D53;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #ffffff;
+            background: #d62828;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        h2, h3 {
+            color: #D84040;
+            font-family: 'Montserrat', sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: rgba(255, 255, 255, 0.8);
+            margin: 10px auto;
+            padding: 15px;
+            width: 60%;
+            border-radius: 12px;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+        }
