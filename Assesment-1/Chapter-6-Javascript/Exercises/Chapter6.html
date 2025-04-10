@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Cost Calculator</title>
+	<link rel="stylesheet" href="chapter6.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Fuel Cost Calculator</h2>
+
+        <label for="fuel-price">Fuel Price (per liter/gallon):</label>
+        <input type="number" id="fuel-price" value="2.01" placeholder="Enter price" required>
+
+        <label for="fuel-amount">Fuel Amount (liters/gallons):</label>
+        <input type="number" id="fuel-amount" placeholder="Enter amount" required>
+
+        <button onclick="calculateFuelCost()">Calculate</button>
+
+        <div id="result">Total Cost: $ 0.00</div>
+    </div>
+
+    <script>
+        function calculateFuelCost() {
+            const fuelPrice = parseFloat(document.getElementById('fuel-price').value);
+            const fuelAmount = parseFloat(document.getElementById('fuel-amount').value);
+
+            if (isNaN(fuelPrice) || isNaN(fuelAmount) || fuelPrice < 0 || fuelAmount < 0) {
+                alert('Please enter valid positive numbers.');
+                return;
+            }
+
+            const totalCost = (fuelPrice * fuelAmount).toFixed(2);
+
+            document.getElementById('result').textContent = `Total Cost: $${totalCost}`;
+        }
+    </script>
+</body>
+</html>
